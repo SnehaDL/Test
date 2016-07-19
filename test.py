@@ -21,7 +21,7 @@ else:
 def bubble_sort(items):
         """ Implementation of bubble sort """
         for i in xrange(len(items)):
-                for j in xrange(len(items)-1-i):
-                        if items[j] &gt; items[j+1]:
+                for j in xrange(len(items)-1):
+                        if items[j] &lt; items[j+1]:
                                 items[j], items[j+1] = items[j+1], items[j]     # Swap!
  
